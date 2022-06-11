@@ -9,7 +9,7 @@ public class RecogidaMonedas : MonoBehaviour
     public float durationDoubleCoins = 5;
     private float time;
     public bool isTime = false;
-   
+    
 
 
     // Start is called before the first frame update
@@ -35,10 +35,11 @@ public class RecogidaMonedas : MonoBehaviour
             }
         }
 
+        
+    
+       
 
-        
-        
-    }
+}
 
     private void OnTriggerEnter(Collider other)
     {
@@ -60,4 +61,6 @@ public class RecogidaMonedas : MonoBehaviour
             
         }
     }
+
+   
 }

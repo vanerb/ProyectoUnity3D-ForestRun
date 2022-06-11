@@ -22,6 +22,7 @@ public class LowVelocityAvantage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
             isLowVelocityActive = true;
             Destroy(this.gameObject);
         }

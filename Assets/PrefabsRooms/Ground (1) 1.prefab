@@ -237,8 +237,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &688375963027022240
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,8 +330,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &813361694531582167
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,8 +827,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &1991397564649316799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,8 +1035,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &2510134462051753029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,8 +1159,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &3624812850663745925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,8 +1252,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &4591816587126800276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,8 +2082,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &7362659206423001273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,8 +2144,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &7438223072763984337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,8 +2412,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &8257707177192699032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,8 +2535,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &8620388396850531345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,8 +2796,6 @@ MonoBehaviour:
   coinSon: {fileID: 0}
   durationDoubleCoins: 5
   isTime: 0
-  player: {fileID: 0}
-  speed: 2
 --- !u!1 &9157419926398703717
 GameObject:
   m_ObjectHideFlags: 0

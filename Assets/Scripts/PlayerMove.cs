@@ -95,7 +95,15 @@ public class PlayerMove : MonoBehaviour
         {
             if (forwardSpeed < maxSpeed)
             {
-                forwardSpeed -= 0.5f * Time.deltaTime;
+                if(forwardSpeed > 2)
+                {
+                    forwardSpeed -= 0.5f * Time.deltaTime;
+                }
+                else
+                {
+                    forwardSpeed += 0.1f * Time.deltaTime;
+                }
+                
             }
         }
         else if (LowVelocityAvantage.isLowVelocityActive == false)
@@ -198,6 +206,7 @@ public class PlayerMove : MonoBehaviour
         }
 
         coinstext.text = "Coins: " + numberOfCoins;
+        
         //transform.position = Vector3.Lerp(transform.position, targetPosition, 70 * Time.deltaTime);
         //controller.center = controller.center;
 
@@ -254,7 +263,7 @@ public class PlayerMove : MonoBehaviour
                 musicaFondo.Stop();
                 this.enabled = false;
                 Invoke("Example", 2f);
-            
+                PlayerPrefs.SetInt("coins", numberOfCoins);
 
         }
 

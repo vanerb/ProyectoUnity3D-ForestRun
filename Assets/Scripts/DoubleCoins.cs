@@ -23,6 +23,7 @@ public class DoubleCoins : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
             isDoubleCoins = true;
             Destroy(this.gameObject);
         }
