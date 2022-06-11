@@ -9,7 +9,7 @@ public class RecogidaMonedas : MonoBehaviour
     public float durationDoubleCoins = 5;
     private float time;
     public bool isTime = false;
-    
+    public float speed = 1;
 
 
     // Start is called before the first frame update
@@ -35,8 +35,8 @@ public class RecogidaMonedas : MonoBehaviour
             }
         }
 
-        
-    
+
+        transform.Rotate(speed * Vector3.up, Space.World);
        
 
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class LowVelocityAvantage : MonoBehaviour
 {
     public static bool isLowVelocityActive = false;
-   
+    public float speed = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +15,7 @@ public class LowVelocityAvantage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        transform.Rotate(speed * Vector3.up, Space.World);
     }
 
     private void OnTriggerEnter(Collider other)
