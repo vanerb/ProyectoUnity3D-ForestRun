@@ -61,8 +61,15 @@ public class PlayerMove : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         numberOfCoins = 0;
-        musicaFondo.Play();
-
+        
+        if(PauseMenu.isPaused == true)
+        {
+            musicaFondo.Pause();
+        }
+        else
+        {
+            musicaFondo.UnPause();
+        }
         time = durationLowVelocity;
         
     }
@@ -76,6 +83,16 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenu.isPaused == true)
+        {
+            musicaFondo.Pause();
+        }
+        else
+        {
+            contador++;
+            cont.text = "Km: " + contador;
+            musicaFondo.UnPause();
+        }
         if (LowVelocityAvantage.isLowVelocityActive == true)
         {
             time -= Time.deltaTime;
@@ -86,8 +103,7 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        contador++;
-        cont.text = "Km: " + contador;
+        
 
        
 
@@ -95,13 +111,13 @@ public class PlayerMove : MonoBehaviour
         {
             if (forwardSpeed < maxSpeed)
             {
-                if(forwardSpeed > 2)
+                if(forwardSpeed > 5)
                 {
                     forwardSpeed -= 0.5f * Time.deltaTime;
                 }
                 else
                 {
-                    forwardSpeed += 0.1f * Time.deltaTime;
+                    forwardSpeed += 0.5f * Time.deltaTime;
                 }
                 
             }
@@ -263,7 +279,7 @@ public class PlayerMove : MonoBehaviour
                 musicaFondo.Stop();
                 this.enabled = false;
                 Invoke("Example", 2f);
-                PlayerPrefs.SetInt("coins", numberOfCoins);
+                
 
         }
 
@@ -281,8 +297,11 @@ public class PlayerMove : MonoBehaviour
         Invoke("anim", 2f);
         Time.timeScale = 1;
         Damage.gameOver = true;
-        
+        cont.GetComponent<Text>().enabled = true;
+        coinstext.GetComponent<Text>().enabled = true;
 
+        cont.rectTransform.position = new Vector3(530, 1900, 0);
+        coinstext.rectTransform.position = new Vector3(530, 1750, 0);
 
     }
 

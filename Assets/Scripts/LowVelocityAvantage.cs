@@ -15,7 +15,14 @@ public class LowVelocityAvantage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(speed * Vector3.up, Space.World);
+        if (PauseMenu.isPaused == true)
+        {
+            transform.Rotate(0 * Vector3.up, Space.World);
+        }
+        else
+        {
+            transform.Rotate(speed * Vector3.up, Space.World);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

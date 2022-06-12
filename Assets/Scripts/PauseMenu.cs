@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject optionsPanel; 
     public AudioSource clickBoton;
+    public static bool isPaused = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,10 +43,6 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-
-
-
-
     public void Salir()
     {
         clickBoton.Play();
@@ -68,7 +65,7 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         clickBoton.Play();
-        
+        isPaused = true;
         optionsPanel.SetActive(true);
         Time.timeScale = 0;
     }
@@ -76,7 +73,7 @@ public class PauseMenu : MonoBehaviour
     public void volver()
     {
         clickBoton.Play();
-        
+        isPaused = false;
         optionsPanel.SetActive(false);
         Time.timeScale = 1;
     }

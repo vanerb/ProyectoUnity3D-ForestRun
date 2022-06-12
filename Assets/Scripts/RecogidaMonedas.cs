@@ -22,7 +22,14 @@ public class RecogidaMonedas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (PauseMenu.isPaused == true)
+        {
+            transform.Rotate(0 * Vector3.up, Space.World);
+        }
+        else
+        {
+            transform.Rotate(speed * Vector3.up, Space.World);
+        }
         if (DoubleCoins.isDoubleCoins == true)
         {
             isTime = true;
@@ -36,7 +43,7 @@ public class RecogidaMonedas : MonoBehaviour
         }
 
 
-        transform.Rotate(speed * Vector3.up, Space.World);
+       
        
 
 }
@@ -48,12 +55,14 @@ public class RecogidaMonedas : MonoBehaviour
             if(isTime == true)
             {
                 PlayerMove.numberOfCoins += 5;
+                coinSon.Play();
                 Destroy(gameObject);
                 Debug.Log("Coins" + PlayerMove.numberOfCoins);
             }
             else
             {
                 PlayerMove.numberOfCoins += 1;
+                coinSon.Play();
                 Destroy(gameObject);
                 Debug.Log("Coins" + PlayerMove.numberOfCoins);
             }
