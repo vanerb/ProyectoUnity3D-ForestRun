@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Idiomas_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: df575959a783eb94dae14d972e700c42, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 167801724928
+    m_Localized: Abspielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505675649024
+    m_Localized: Kredite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529054699520
+    m_Localized: Verlassen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1574768418816
+    m_Localized: Mehr Spiele
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1642896498688
+    m_Localized: "Zur\xFCckkehren"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1665789009920
+    m_Localized: Neu starten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1710047305728
+    m_Localized: "Hauptmen\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1796139589632
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1881132965888
+    m_Localized: du hast verloren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1912703492096
+    m_Localized: Wiederholen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1974061965312
+    m_Localized: "M\xFCnzen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6571618934784
+    m_Localized: "Sch\xF6pfer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6601230721024
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6618230235136
+    m_Localized: Klang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6656863969280
+    m_Localized: Modelle
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

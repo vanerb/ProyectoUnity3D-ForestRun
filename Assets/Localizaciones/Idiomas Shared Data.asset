@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Idiomas Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Idiomas
+  m_TableCollectionNameGuidString: df575959a783eb94dae14d972e700c42
+  m_Entries:
+  - m_Id: 167801724928
+    m_Key: TextPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1505675649024
+    m_Key: TextCredits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529054699520
+    m_Key: TextExit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1574768418816
+    m_Key: TextMore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1642896498688
+    m_Key: TextReturn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1665789009920
+    m_Key: TextReinciar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1710047305728
+    m_Key: TextMenuPrincipal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1796139589632
+    m_Key: TextPause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1881132965888
+    m_Key: TextHasPerdido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1912703492096
+    m_Key: TextVuelveAIntentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1974061965312
+    m_Key: TextMonedas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6571618934784
+    m_Key: TextCreator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6601230721024
+    m_Key: TextMusic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6618230235136
+    m_Key: TextSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6656863969280
+    m_Key: TextModels
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1654995835208

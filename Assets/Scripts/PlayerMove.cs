@@ -25,6 +25,8 @@ public class PlayerMove : MonoBehaviour
     public static int contador = 0;
     public Text cont;
     private int reset;
+    public Text coinTextNoValors;
+    public Text kmTextNoValors;
 
 
     public Animator animator;
@@ -61,8 +63,8 @@ public class PlayerMove : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         numberOfCoins = 0;
-        
-        if(PauseMenu.isPaused == true)
+        PauseMenu.isPaused = false;
+        if (PauseMenu.isPaused == true)
         {
             musicaFondo.Pause();
         }
@@ -90,7 +92,7 @@ public class PlayerMove : MonoBehaviour
         else
         {
             contador++;
-            cont.text = "Km: " + contador;
+            cont.text = "" + contador;
             musicaFondo.UnPause();
         }
         if (LowVelocityAvantage.isLowVelocityActive == true)
@@ -221,7 +223,7 @@ public class PlayerMove : MonoBehaviour
             targetPosition += Vector3.right * laneDistance;
         }
 
-        coinstext.text = "Coins: " + numberOfCoins;
+        coinstext.text = "" + numberOfCoins;
         
         //transform.position = Vector3.Lerp(transform.position, targetPosition, 70 * Time.deltaTime);
         //controller.center = controller.center;
@@ -273,7 +275,9 @@ public class PlayerMove : MonoBehaviour
                 Reset();
                 cont.GetComponent<Text>().enabled = false;
                 coinstext.GetComponent<Text>().enabled = false;
-                daño.Play();
+                coinTextNoValors.GetComponent<Text>().enabled = false;
+                kmTextNoValors.GetComponent<Text>().enabled = false;
+            daño.Play();
                 animator.Play("Standing React Death Backward");
                 correr.Stop();
                 musicaFondo.Stop();
@@ -299,13 +303,21 @@ public class PlayerMove : MonoBehaviour
         Damage.gameOver = true;
         cont.GetComponent<Text>().enabled = true;
         coinstext.GetComponent<Text>().enabled = true;
+        coinTextNoValors.GetComponent<Text>().enabled = true;
+        kmTextNoValors.GetComponent<Text>().enabled = true;
+        //cont.GetComponent<Text>().enabled = true;
+        //coinstext.GetComponent<Text>().enabled = true;
+        //coinTextNoValors.GetComponent<Text>().enabled = true;
+        //kmTextNoValors.GetComponent<Text>().enabled = true;
 
-        cont.rectTransform.position = new Vector3(530, 1900, 0);
-        coinstext.rectTransform.position = new Vector3(530, 1750, 0);
+        //coinTextNoValors.rectTransform.position = new Vector3(350, 1750, 0);
+        //kmTextNoValors.rectTransform.position = new Vector3(350, 1900, 0);
+        //cont.rectTransform.position = new Vector3(600, 1900, 0);
+        //coinstext.rectTransform.position = new Vector3(920, 1750, 0);
 
     }
 
-    
+
 
 
 
