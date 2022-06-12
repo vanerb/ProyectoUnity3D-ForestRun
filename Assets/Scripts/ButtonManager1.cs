@@ -16,14 +16,14 @@ public class ButtonManager1 : MonoBehaviour
 
     public void Reiniciar()
     {
-        
+        PlayerMove.contador = 0;
         clickBoton.Play();
         SceneManager.LoadScene("SampleScene");
     }
 
     public void Reiniciar2()
     {
-
+        PlayerMove.contador = 0;
         clickBoton.Play();
         SceneManager.LoadScene("SampleScene");
     }
@@ -36,6 +36,7 @@ public class ButtonManager1 : MonoBehaviour
 
     public void MenuPrincipal()
     {
+        PlayerMove.contador = 0;
         clickBoton.Play();
         SceneManager.LoadScene("MenuPrincipal");
         Time.timeScale = 1;
